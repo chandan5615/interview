@@ -1,0 +1,11 @@
+<!DOCTYPE html><html><head><title>Products</title><link rel="stylesheet" href="/static/style.css"></head>
+<body>
+<h2>Product Stock</h2>
+<button onclick="call('/generate')">Generate Products</button>
+<button onclick="call('/sort-name')">Sort Name ↑</button>
+<button onclick="call('/sort-stock')">Sort Stock ↓</button>
+<button onclick="call('/reduce')">Reduce Stock by 2</button>
+<button onclick="call('/increase')">Increase Even by 2</button>
+<table><thead><tr><th>Product</th><th>Stock</th></tr></thead><tbody id="body"></tbody></table>
+<button onclick="prev()">Previous</button><span id="pg"></span><button onclick="next()">Next</button>
+<script src="/static/script.js"></script></body></html>
